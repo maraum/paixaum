@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> paixaum ?!</title>
+        <style>
+	        html, body
+	        {
+	            margin:0;
+	        }
+	        
+	        h1
+	        {
+	            font-family: arial, sans-serif;
+	            font-size:16px;
+	            color:#fff;
+	        }
+	        
+	        .overlay
+	        {
+	            position:absolute;
+	            top:70px;
+	            left:0;
+	            padding:20px 50px 20px 50px;
+	            background-color:#000;
+	            opacity:0.35;
+	            filter:alpha(opacity=35); 
+	            z-index:2;
+	        }
+	        
+	        .videoContainer 
+	        {
+	            position:absolute;
+	            height:100%;
+	            width:100%;
+	            overflow: hidden;
+	        }
+
+	        .videoContainer video 
+	        {
+	            min-width: 100%;
+	            min-height: 100%;
+	        }
+    	</style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Paixaum!</h1>
+    </div>
+    <div class="videoContainer">
+        <video autoplay loop>
+            <source src="https://maraum.com/imagens_sites/ayn611W_460sv.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'  autoplay="autoplay">
+            <source src="https://s3.amazonaws.com/activelab/files/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
+            Video not supported.
+        </video>
+    </div>
+</body>
+
+</html>
